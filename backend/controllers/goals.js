@@ -3,7 +3,7 @@ const Goal=require('../models/goals')
 const User=require('../models/user')
 exports.getGoals=async(req,res)=>{
     try{
-      const goals=await Goal.find()
+      const goals=await Goal.find({user:req.user.id})
       res.status(200).json(goals)
     }catch(err){
         console.log(err)
@@ -16,7 +16,8 @@ exports.postGoals=async(req,res)=>{
             res.status(400).json({message:'Please add a Goal'})
         }   
         const goal=await Goal.create({
-            text:req.body.text
+            text:req.body.text,
+            user:req.user.id
         })
         res.status(201).json(goal)
     }catch(err){
