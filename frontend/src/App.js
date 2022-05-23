@@ -9,7 +9,7 @@ import Modal from './components/Modal';
 
 function App() {
   return (
-    <div className=" min-h-scree">
+    <div className=" min-h-screen">
       
       <Router>
         <Routes>
