@@ -1,5 +1,5 @@
 import axios from'axios';
-const baseUrl='http://localhost:000'
+const baseUrl='http://localhost:8000'
 
 export const getData=(url)=>{
     return axios.get(`${baseUrl}/${url}`,{headers:{
