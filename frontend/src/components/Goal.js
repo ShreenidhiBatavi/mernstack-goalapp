@@ -84,7 +84,7 @@ const updateGoal=async(e)=>{
        {show?<form onSubmit={handleSubmit} className="lg:w-1/2 w-11/12  mx-auto py-5 border border-gray-800 p-4 shadow-lg rounded">
             <div className='flex flex-col'>
                 <h1 className='text-red-500 my-2 text-lg'>{error}</h1>
-                <label className='text-gray-800 text-lg mb-5 lg:ml-10'>Add Goal</label>
+                <label className='text-gray-800 text-lg mb-5 lg:ml-10'>Add goal</label>
                 <input 
                  placeholder='Enter Goal'
                  className='bg-transparent border border-gray-800 lg:w-3/4  p-2 lg:ml-10 placeholder:text-gray-500'
